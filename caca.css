@@ -22,9 +22,9 @@ _G.Sensitivity = 0
 _G.CircleSides = 64
 _G.CircleColor = Color3.fromRGB(255, 0, 130)
 _G.CircleTransparency = 0
-_G.CircleRadius = 200
+_G.CircleRadius = 100
 _G.CircleFilled = false
-_G.CircleVisible = true
+_G.CircleVisible = false
 _G.CircleThickness = 1
 
 local FOVCircle = Drawing.new("Circle")
@@ -64,7 +64,7 @@ function FindNearestPlayer()
 end
 
 UIS.InputBegan:Connect(function(Input)
-	if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+	if Input.UserInputType == Enum.UserInputType.C then
 		HoldingM2 = true
 		Active = true
 		Lock = true
@@ -85,4 +85,4 @@ UIS.InputEnded:Connect(function(Input)
 		UnLockCursor()
 	end
 end)
-game.StarterGui:SetCore("SendNotification", {Title = "Working.", Text = "Success, Script Loaded.", Duration = 4,})
+game.StarterGui:SetCore("SendNotification", {Title = "kayto#1010", Text = "kayto blame u", Duration = 4,})
